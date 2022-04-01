@@ -11,29 +11,31 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :pseudo, style: "display: block" %>
+<div class="form_content">
+<div class="section_input">
+  <div class="form_input">
+    <%= form.label :pseudo %>
     <%= form.text_field :pseudo %>
   </div>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
+  <div class="form_input">
+    <%= form.label :first_name %>
     <%= form.text_field :first_name %>
   </div>
 
-   <div>
-    <%= form.label :last_name, style: "display: block" %>
+   <div class="form_input">
+    <%= form.label :last_name %>
     <%= form.text_field :last_name %>
   </div>
 
-  <div>
-    <%= form.label :job, style: "display: block" %>
+  <div class="form_input">
+    <%= form.label :job %>
     <%= form.text_field :job %>
   </div>
+</div>
 
-<div>
-
-  <div class="section section_eye">
+<div class="section_item">
+  <div class="section_eye">
     <%= form.label :eyes %>
     <%= form.text_field :eyes, style:"width: 150px" %>
     <div class="item">
@@ -79,7 +81,7 @@
     </script>
   </div>
 
-  <div class="section section_hair">
+  <div class="section_hair">
     <%= form.label :hair %>
     <%= form.text_field :hair, style:"width: 150px" %>
     <div class="item">
@@ -122,7 +124,7 @@
     </script>
   </div>
 
-  <div class="section section_top">
+  <div class="section_top">
     <%= form.label :top%>
     <%= form.text_field :top, style:"width: 150px" %>
     <div class="item">
@@ -166,7 +168,7 @@
     </script>
   </div>
 
-  <div class="section section_bottom">
+  <div class="section_bottom">
     <%= form.label :bottom %>
     <%= form.text_field :bottom, style:"width : 150px" %>
     <div class="item">
@@ -210,6 +212,7 @@
 
     </script>
   </div>
+</div>
 </div>
 
 

@@ -19,7 +19,24 @@
   padding: 10px;
  }
 
- .section{
+ .form_content{
+  display: flex;
+  flex-direction: row-reverse;
+ }
+.section_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_input{
+  display: flex;
+  flex-direction: column;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+ .section_item{
   display:flex;
   flex-direction: column;
   padding: 5px;
