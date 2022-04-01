@@ -21,7 +21,7 @@
     <%= form.text_field :first_name %>
   </div>
 
-  <div>
+   <div>
     <%= form.label :last_name, style: "display: block" %>
     <%= form.text_field :last_name %>
   </div>
@@ -32,32 +32,102 @@
   </div>
 
 <div>
+
   <div>
     <%= form.label :eyes, style: "display: block" %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
+    <%= form.text_field :eyes, type: "hidden" %>
+    <%= image_tag 'eye_1.svg', :size => '61x48', 'data-id':'0', class:"interactif"  %>
+    <%= image_tag 'eye_2.svg', :size => '61x48', 'data-id':'1', class:"interactif"   %>
+    <%= image_tag 'eye_3.svg', :size => '61x48', 'data-id':'2', class:"interactif"   %>
+    <!-- CODE JAVASCRIPT -->
+    <script>
+      const eye1 = document.querySelector("img[data-id='0']");
+      /* J'assigne à une variable "eye1" avec une methode "querySelector" permettant de récupérer l'attribut "data-id" de mon image "img" */
+      const eye2 = document.querySelector("img[data-id='1']");
+      const eye3 = document.querySelector("imgeye1.onclick = changeEyes;[data-id='2']");
+      eye1.onclick = changeEyes;
+      eye2.onclick = changeEyes;
+      eye3.onclick = changeEyes;
+
+        function changeEyes(event)
+        {
+          const eyeinput = document.getElementById("user_eyes")
+          /* J'assigne à une variable "eye1" avec une methode "getElementById" permettant de récupérer l'identifiant uniquement de mon élément*/
+          eyeinput.value = event.target.dataset.id;
+          /* avec la méthode ".value", j'écris avec la fonction dans target (le lieu où est mon image) le data-id de mon image*/
+        }
+    </script>
   </div>
 
-  <div></div>_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
- </div>
+  <div>
+    <%= form.label :hair, style: "display: block" %>
+    <%= form.text_field :hair, type: "hidden" %>
+    <%= image_tag 'hair_1.svg', :size => '61x48', 'data-id':'3', class:"interactif target"  %>
+    <%= image_tag 'hair_2.svg', :size => '61x48', 'data-id':'4', class:"interactif target"  %>
+    <%= image_tag 'hair_3.svg', :size => '61x48', 'data-id':'5', class:"interactif target"  %>
+    <!-- CODE JAVASCRIPT -->
+    <script>, class:"interactif"
+      const hair1 = document.querySelector("img[data-id='3']");
+      const hair2 = document.querySelector("img[data-id='4']");
+      const hair3 = document.querySelector("img[data-id='5']");
+      hair1.onclick = changeHair;
+      hair2.onclick = changeHair;
+      hair3.onclick = changeHair;
+
+        function changeHair(event)
+        {
+          const hairinput = document.getElementById("user_hair")
+          hairinput.value = event.target.dataset.id
+        }
+
+    </script>
+  </div>
 
   <div>
     <%= form.label :top, style: "display: block" %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
+    <%= form.text_field :top, type: "hidden" %>
+    <%= image_tag 'top_1.svg', :size => '61x48', 'data-id':'6', class:"interactif"  %>
+    <%= image_tag 'top_2.svg', :size => '61x48', 'data-id':'7', class:"interactif"  %>
+    <%= image_tag 'top_3.svg', :size => '61x48', 'data-id':'8', class:"interactif"  %>
+    <!-- CODE JAVASCRIPT -->
+
+    <script>
+      const top1 = document.querySelector("img[data-id='6']");
+      const top2 = document.querySelector("img[data-id='7']");, class:"interactif"
+      top3.onclick = changeTop;
+
+        function changeTop(event)
+        {
+          const topinput = document.getElementById("user_top")
+          topinput.value = event.target.dataset.id
+        }
+    </script>
   </div>
 
   <div>
     <%= form.label :bottom, style: "display: block" %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
-    <%= image_tag ("https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe5cea834-910d-4f45-b1d3-b3be203deeb8%2FFichier_18.svg?table=block&id=1ef37f47-8105-496a-bd07-a2fde8975e3f&spaceId=deeab681-aecb-435e-abd2-ca389448f1fa&userId=3c9e31d2-2b5d-4834-aa7e-fdc1021f5064&cache=v2"), :size => '220x220' %>
+    <%= form.text_field :bottom, type: "hidden" %>
+    <%= image_tag 'bottom_1.svg', :size => '61x48', 'data-id':'9', class:"interactif"  %>
+    <%= image_tag 'bottom_2.svg', :size => '61x48', 'data-id':'10', class:"interactif"  %>
+    <%= image_tag 'bottom_3.svg', :size => '61x48', 'data-id':'11', class:"interactif"  %>
+    <!-- CODE JAVASCRIPT -->
+    <script>
+      const bottom1 = document.querySelector("img[data-id='9']");
+      const bottom2 = document.querySelector("img[data-id='10']");
+      const bottom3 = document.querySelector("img[data-id='11']");
+      bottom1.onclick = changeBottom;
+      bottom2.onclick = changeBottom;
+      bottom3.onclick = changeBottom;
+
+        function changeBottom(event)
+        {
+          const bottominput = document.getElementById("user_bottom")
+          bottominput.value = event.target.dataset.id
+        }
+    </script>
   </div>
 </div>
+
 
   <div>
     <%= form.submit %>

@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .interactif{
+  background-color: #F29200;
+  padding: 10px;
+ }
+
+ .target{
+  background-color: #F29200;
+  padding: 5px;
+ }
+
+.text-main-color{
+  color: #F29200;
+}
