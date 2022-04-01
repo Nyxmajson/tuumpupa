@@ -44,7 +44,7 @@
       const eye1 = document.querySelector("img[data-id='0']");
       /* J'assigne à une variable "eye1" avec une methode "querySelector" permettant de récupérer l'attribut "data-id" de mon image "img" */
       const eye2 = document.querySelector("img[data-id='1']");
-      const eye3 = document.querySelector("imgeye1.onclick = changeEyes;[data-id='2']");
+      const eye3 = document.querySelector("img[data-id='2']");
       eye1.onclick = changeEyes;
       eye2.onclick = changeEyes;
       eye3.onclick = changeEyes;
@@ -59,26 +59,50 @@
     </script>
   </div>
 
-  <div>
-    <%= form.label :hair, style: "display: block" %>
-    <%= form.text_field :hair, type: "hidden" %>
-    <%= image_tag 'hair_1.svg', :size => '61x48', 'data-id':'3', class:"interactif target"  %>
-    <%= image_tag 'hair_2.svg', :size => '61x48', 'data-id':'4', class:"interactif target"  %>
-    <%= image_tag 'hair_3.svg', :size => '61x48', 'data-id':'5', class:"interactif target"  %>
+  <div class="section_hair">
+    <%= form.label :hair %>
+    <%= form.text_field :hair, style:"width: 150px" %>
+    <div class="item_hair">
+      <%= image_tag 'hair_1.svg', :size => '71x58', 'data-id':'0', class:"interactif "  %>
+      <%= image_tag 'hair_2.svg', :size => '71x58', 'data-id':'1', class:"interactif "  %>
+      <%= image_tag 'hair_3.svg', :size => '71x58', 'data-id':'2', class:"interactif "  %>
+    </div>
+
+
     <!-- CODE JAVASCRIPT -->
-    <script>, class:"interactif"
-      const hair1 = document.querySelector("img[data-id='3']");
-      const hair2 = document.querySelector("img[data-id='4']");
-      const hair3 = document.querySelector("img[data-id='5']");
+    <script>
+      const hair1 = document.querySelector(".section_hair .item_hair img[data-id='0']");
+      const hair2 = document.querySelector(".section_hair .item_hair img[data-id='1']");
+      const hair3 = document.querySelector(".section_hair .item_hair img[data-id='2']");
       hair1.onclick = changeHair;
       hair2.onclick = changeHair;
       hair3.onclick = changeHair;
 
-        function changeHair(event)
+      function changeHair(event)
         {
           const hairinput = document.getElementById("user_hair")
           hairinput.value = event.target.dataset.id
+          hairinput = true;
+          console.log(hairinput)
         }
+
+        hair1.addEventListener('click', function () {
+          hair1.classList.add("target");
+          hair2.classList.remove("target");
+          hair3.classList.remove("target");
+        })
+
+        hair2.addEventListener('click', function () {
+          hair2.classList.add("target");
+          hair1.classList.remove("target");
+          hair3.classList.remove("target");
+        })
+
+        hair3.addEventListener('click', function () {
+          hair3.classList.add("target");
+          hair2.classList.remove("target");
+          hair1.classList.remove("target");
+        })
 
     </script>
   </div>
@@ -93,7 +117,10 @@
 
     <script>
       const top1 = document.querySelector("img[data-id='6']");
-      const top2 = document.querySelector("img[data-id='7']");, class:"interactif"
+      const top2 = document.querySelector("img[data-id='7']");
+      const top3 = document.querySelector("img[data-id='8']");
+      top1.onclick = changeTop;
+      top2.onclick = changeTop;
       top3.onclick = changeTop;
 
         function changeTop(event)

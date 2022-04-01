@@ -19,9 +19,21 @@
   padding: 10px;
  }
 
- .target{
-  background-color: #F29200;
+ .section_hair{
+  display:flex;
+  flex-direction: column;
   padding: 5px;
+  width: 300px;
+ }
+
+ .item_hair{
+  display: flex;
+  background-color: #F29200;
+  padding:10px;
+ }
+
+ .target{
+   background-color: blueviolet;
  }
 
 .text-main-color{
