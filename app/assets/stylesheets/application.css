@@ -19,17 +19,17 @@
   padding: 10px;
  }
 
- .section_hair{
+ .section{
   display:flex;
   flex-direction: column;
   padding: 5px;
-  width: 300px;
+  width: 400px;
  }
 
- .item_hair{
+ .item{
   display: flex;
+  justify-content: space-evenly;
   background-color: #F29200;
-  padding:10px;
  }
 
  .target{

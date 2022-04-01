@@ -33,18 +33,20 @@
 
 <div>
 
-  <div>
-    <%= form.label :eyes, style: "display: block" %>
-    <%= form.text_field :eyes, type: "hidden" %>
-    <%= image_tag 'eye_1.svg', :size => '61x48', 'data-id':'0', class:"interactif"  %>
-    <%= image_tag 'eye_2.svg', :size => '61x48', 'data-id':'1', class:"interactif"   %>
-    <%= image_tag 'eye_3.svg', :size => '61x48', 'data-id':'2', class:"interactif"   %>
+  <div class="section section_eye">
+    <%= form.label :eyes %>
+    <%= form.text_field :eyes, style:"width: 150px" %>
+    <div class="item">
+      <%= image_tag 'eye_1.svg', :size => '61x48', 'data-id':'0', class:"interactif"  %>
+      <%= image_tag 'eye_2.svg', :size => '61x48', 'data-id':'1', class:"interactif"   %>
+      <%= image_tag 'eye_3.svg', :size => '61x48', 'data-id':'2', class:"interactif"   %>
+    </div>
     <!-- CODE JAVASCRIPT -->
     <script>
-      const eye1 = document.querySelector("img[data-id='0']");
+      const eye1 = document.querySelector(".section_eye .item img[data-id='0']");
+      const eye2 = document.querySelector(".section_eye .item img[data-id='1']");
+      const eye3 = document.querySelector(".section_eye .item img[data-id='2']");
       /* J'assigne à une variable "eye1" avec une methode "querySelector" permettant de récupérer l'attribut "data-id" de mon image "img" */
-      const eye2 = document.querySelector("img[data-id='1']");
-      const eye3 = document.querySelector("img[data-id='2']");
       eye1.onclick = changeEyes;
       eye2.onclick = changeEyes;
       eye3.onclick = changeEyes;
@@ -56,24 +58,40 @@
           eyeinput.value = event.target.dataset.id;
           /* avec la méthode ".value", j'écris avec la fonction dans target (le lieu où est mon image) le data-id de mon image*/
         }
+
+        eye1.addEventListener('click', function () {
+          eye1.classList.add("target");
+          eye2.classList.remove("target");
+          eye3.classList.remove("target");
+        })
+
+        eye2.addEventListener('click', function () {
+          eye2.classList.add("target");
+          eye1.classList.remove("target");
+          eye3.classList.remove("target");
+        })
+
+        eye3.addEventListener('click', function () {
+          eye3.classList.add("target");
+          eye2.classList.remove("target");
+          eye1.classList.remove("target");
+        })
     </script>
   </div>
 
-  <div class="section_hair">
+  <div class="section section_hair">
     <%= form.label :hair %>
     <%= form.text_field :hair, style:"width: 150px" %>
-    <div class="item_hair">
+    <div class="item">
       <%= image_tag 'hair_1.svg', :size => '71x58', 'data-id':'0', class:"interactif "  %>
       <%= image_tag 'hair_2.svg', :size => '71x58', 'data-id':'1', class:"interactif "  %>
       <%= image_tag 'hair_3.svg', :size => '71x58', 'data-id':'2', class:"interactif "  %>
     </div>
-
-
     <!-- CODE JAVASCRIPT -->
     <script>
-      const hair1 = document.querySelector(".section_hair .item_hair img[data-id='0']");
-      const hair2 = document.querySelector(".section_hair .item_hair img[data-id='1']");
-      const hair3 = document.querySelector(".section_hair .item_hair img[data-id='2']");
+      const hair1 = document.querySelector(".section_hair .item img[data-id='0']");
+      const hair2 = document.querySelector(".section_hair .item img[data-id='1']");
+      const hair3 = document.querySelector(".section_hair .item img[data-id='2']");
       hair1.onclick = changeHair;
       hair2.onclick = changeHair;
       hair3.onclick = changeHair;
@@ -82,8 +100,6 @@
         {
           const hairinput = document.getElementById("user_hair")
           hairinput.value = event.target.dataset.id
-          hairinput = true;
-          console.log(hairinput)
         }
 
         hair1.addEventListener('click', function () {
@@ -103,22 +119,23 @@
           hair2.classList.remove("target");
           hair1.classList.remove("target");
         })
-
     </script>
   </div>
 
-  <div>
-    <%= form.label :top, style: "display: block" %>
-    <%= form.text_field :top, type: "hidden" %>
-    <%= image_tag 'top_1.svg', :size => '61x48', 'data-id':'6', class:"interactif"  %>
-    <%= image_tag 'top_2.svg', :size => '61x48', 'data-id':'7', class:"interactif"  %>
-    <%= image_tag 'top_3.svg', :size => '61x48', 'data-id':'8', class:"interactif"  %>
+  <div class="section section_top">
+    <%= form.label :top%>
+    <%= form.text_field :top, style:"width: 150px" %>
+    <div class="item">
+      <%= image_tag 'top_1.svg', :size => '61x48', 'data-id':'0', class:"interactif"  %>
+      <%= image_tag 'top_2.svg', :size => '61x48', 'data-id':'1', class:"interactif"  %>
+      <%= image_tag 'top_3.svg', :size => '61x48', 'data-id':'2', class:"interactif"  %>
+    </div>
     <!-- CODE JAVASCRIPT -->
 
     <script>
-      const top1 = document.querySelector("img[data-id='6']");
-      const top2 = document.querySelector("img[data-id='7']");
-      const top3 = document.querySelector("img[data-id='8']");
+      const top1 = document.querySelector(".section_top .item img[data-id='0']");
+      const top2 = document.querySelector(".section_top .item img[data-id='1']");
+      const top3 = document.querySelector(".section_top .item img[data-id='2']");
       top1.onclick = changeTop;
       top2.onclick = changeTop;
       top3.onclick = changeTop;
@@ -128,20 +145,40 @@
           const topinput = document.getElementById("user_top")
           topinput.value = event.target.dataset.id
         }
+
+        top1.addEventListener('click', function () {
+          top1.classList.add("target");
+          top2.classList.remove("target");
+          top3.classList.remove("target");
+        })
+
+        top2.addEventListener('click', function () {
+          top2.classList.add("target");
+          top1.classList.remove("target");
+          top3.classList.remove("target");
+        })
+
+        top3.addEventListener('click', function () {
+          top3.classList.add("target");
+          top2.classList.remove("target");
+          top1.classList.remove("target");
+        })
     </script>
   </div>
 
-  <div>
-    <%= form.label :bottom, style: "display: block" %>
-    <%= form.text_field :bottom, type: "hidden" %>
-    <%= image_tag 'bottom_1.svg', :size => '61x48', 'data-id':'9', class:"interactif"  %>
-    <%= image_tag 'bottom_2.svg', :size => '61x48', 'data-id':'10', class:"interactif"  %>
-    <%= image_tag 'bottom_3.svg', :size => '61x48', 'data-id':'11', class:"interactif"  %>
+  <div class="section section_bottom">
+    <%= form.label :bottom %>
+    <%= form.text_field :bottom, style:"width : 150px" %>
+    <div class="item">
+      <%= image_tag 'bottom_1.svg', :size => '61x48', 'data-id':'0', class:"interactif"  %>
+      <%= image_tag 'bottom_2.svg', :size => '61x48', 'data-id':'1', class:"interactif"  %>
+      <%= image_tag 'bottom_3.svg', :size => '61x48', 'data-id':'2', class:"interactif"  %>
+    </div>
     <!-- CODE JAVASCRIPT -->
     <script>
-      const bottom1 = document.querySelector("img[data-id='9']");
-      const bottom2 = document.querySelector("img[data-id='10']");
-      const bottom3 = document.querySelector("img[data-id='11']");
+      const bottom1 = document.querySelector(".section_bottom .item img[data-id='0']");
+      const bottom2 = document.querySelector(".section_bottom .item img[data-id='1']");
+      const bottom3 = document.querySelector(".section_bottom .item img[data-id='2']");
       bottom1.onclick = changeBottom;
       bottom2.onclick = changeBottom;
       bottom3.onclick = changeBottom;
@@ -151,6 +188,26 @@
           const bottominput = document.getElementById("user_bottom")
           bottominput.value = event.target.dataset.id
         }
+
+          bottom1.addEventListener('click', function () {
+          bottom1.classList.add("target");
+          bottom2.classList.remove("target");
+          bottom3.classList.remove("target");
+        })
+
+        bottom2.addEventListener('click', function () {
+          bottom2.classList.add("target");
+          bottom1.classList.remove("target");
+          bottom3.classList.remove("target");
+        })
+
+        bottom3.addEventListener('click', function () {
+          bottom3.classList.add("target");
+          bottom2.classList.remove("target");
+          bottom1.classList.remove("target");
+        })
+
+
     </script>
   </div>
 </div>
