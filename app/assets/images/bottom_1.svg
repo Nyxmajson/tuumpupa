@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="96.38" height="63.34" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.38 63.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e2e28;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-4 {
+        fill: #4a5963;
+      }
+
+      .cls-5 {
+        stroke: #38434a;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: none;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-7 {
+        stroke: gray;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-10 {
+        fill: #666;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-6" y="8" width="96.38" height="55.34"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-6" y="8" width="96.38" height="55.34"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-6" x="7" width="81.94" height="16.99"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-6" x="7" y="0" width="81.94" height="16.99"/>
+    </clipPath>
+  </defs>
+  <g id="Calque_1" data-name="Calque 1"/>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Bas_Femme" data-name="Bas Femme">
+      <g id="Jupe">
+        <g class="cls-8">
+          <g class="cls-9">
+            <path class="cls-4" d="M86.23,12.39c4.2,5.54,5.66,7.05,5.66,23.96-.3,3.28,3.72,9.59,4,11.25,.91,5.5,1.68,17.14-8.99,15.6L5.57,41.91c-13.3-2.3,1.27-26.05,2.31-28.82l1.77-5.09,28,5.45c5.61,1.09,11.33,1.45,17.03,1.07l31.55-2.12Z"/>
+            <line class="cls-5" x1="16.54" y1="14.53" x2="8.83" y2="38.53"/>
+            <line class="cls-5" x1="14.16" y1="11.35" x2="7.39" y2="32.4"/>
+            <line class="cls-5" x1="33.43" y1="16.76" x2="27.21" y2="43.31"/>
+            <line class="cls-5" x1="32.08" y1="13.53" x2="25.85" y2="40.08"/>
+            <line class="cls-5" x1="51.35" y1="17.08" x2="49.16" y2="44.27"/>
+            <line class="cls-5" x1="52.46" y1="16.78" x2="51.4" y2="44.75"/>
+            <line class="cls-5" x1="66.17" y1="15.81" x2="69.01" y2="44.26"/>
+            <line class="cls-5" x1="64.95" y1="22.56" x2="66.46" y2="37.71"/>
+            <path class="cls-5" d="M79.69,16.33s3.09,5.79,1.9,18.9c-.48,5.3,3.3,11.39,3.3,11.39"/>
+            <path class="cls-5" d="M77.09,17.26s3.09,5.79,1.9,18.9c-.48,5.3,3.3,11.39,3.3,11.39"/>
+          </g>
+        </g>
+      </g>
+      <g id="Ceinture">
+        <g class="cls-3">
+          <g class="cls-2">
+            <path class="cls-1" d="M79.62,1.95s-23.84,6.35-45.49,3.3C23.67,3.79,20.41,1.19,9.55,0l-2.55,7.14,18.24,5.46c4.01,1.2,8.14,1.99,12.31,2.36l51.39,2.02s.29-2.96-7.71-13.11l-1.62-1.93Z"/>
+            <path class="cls-10" d="M27.02,3.6l-2.09,9.23s11.41,3.7,16.88,2.74l1.52-10.98s-6.41,.83-16.31-.99"/>
+            <path class="cls-7" d="M27.02,3.6l-2.09,9.23s11.41,3.7,16.88,2.74l1.52-10.98s-6.41,.83-16.31-.99Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
