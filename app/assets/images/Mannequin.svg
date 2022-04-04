@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="246.91" height="390" viewBox="0 0 246.91 390">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #e8c0a8;
+      }
+
+      .cls-3 {
+        fill: #edcdb9;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1" data-name="Calque 1"/>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Mannequin_Femme" data-name="Mannequin Femme">
+      <g>
+        <rect id="Cou" class="cls-2" x="114.39" y="155.08" width="22.39" height="38.62" rx="8" ry="8"/>
+        <g id="JambeD">
+          <rect id="MolletD" class="cls-2" x="70.28" y="320.72" width="73.79" height="32.29" rx="15" ry="15" transform="translate(-229.69 444.04) rotate(-90)"/>
+          <rect id="CuisseD" class="cls-2" x="69.91" y="278.3" width="74.53" height="32.29" rx="15" ry="15" transform="translate(-187.27 401.62) rotate(-90)"/>
+        </g>
+        <g id="JambeG">
+          <rect id="MolletG" class="cls-2" x="118.43" y="336.96" width="73.79" height="32.29" rx="15" ry="15" transform="translate(-197.78 508.43) rotate(-90)"/>
+          <rect id="CuisseG" class="cls-2" x="118.06" y="294.54" width="74.53" height="32.29" rx="15" ry="15" transform="translate(-155.36 466) rotate(-90)"/>
+        </g>
+        <g id="BrasD">
+          <rect id="AvantB_D" data-name="AvantB D" class="cls-2" x="-.39" y="165.49" width="71.67" height="26.56" rx="13.28" ry="13.28" transform="translate(37.26 361.01) rotate(-169.35)"/>
+          <rect id="Coude_D" data-name="Coude D" class="cls-2" x="44.34" y="169.65" width="26.56" height="26.56" rx="13.28" ry="13.28" transform="translate(80.45 373.37) rotate(-169.35)"/>
+          <rect id="Biceps_D" data-name="Biceps D" class="cls-2" x="44.06" y="173.83" width="71.56" height="26.56" rx="13.28" ry="13.28" transform="translate(123.74 385.76) rotate(-169.35)"/>
+        </g>
+        <g id="Corps">
+          <path class="cls-2" d="M157.97,309.6c-3.87,.37-7.63-1.62-10.73-5.21l-43.18-16.28c-11.36,0-16.98-10.33-13.14-21.41l14.8-42.69-.02-.1c-1.05-.72-2.17-1.61-3.36-2.69-5.35-4.91-4.16-12.38-.8-19.6l-2.47-13.25c-1.38-7.4,4.53-13.77,13.28-13.77l29.22,13.43c8.76,0,14.59,10.19,13.21,17.59l-6.21,33.27c1.8,6.79,7.29,15.88,9.8,19.83,6.39,3,11.64,12.15,12.73,23.42,1.39,14.33-4.49,26.62-13.13,27.46Z"/>
+        </g>
+        <g id="Bras_G" data-name="Bras G">
+          <rect id="AvantB_D-2" data-name="AvantB D" class="cls-2" x="176.46" y="210.13" width="71.67" height="26.56" rx="13.28" ry="13.28" transform="translate(84.46 -57.02) rotate(19.03)"/>
+          <rect id="Coude_D-2" data-name="Coude D" class="cls-2" x="177.7" y="202.77" width="26.56" height="26.56" rx="13.28" ry="13.28" transform="translate(80.89 -50.47) rotate(19.03)"/>
+          <rect id="Biceps_D-2" data-name="Biceps D" class="cls-2" x="133.82" y="195.4" width="71.56" height="26.56" rx="13.28" ry="13.28" transform="translate(77.32 -43.9) rotate(19.03)"/>
+        </g>
+        <path id="Tête" class="cls-2" d="M100.09,176.16c-1.32,.23-2.66,.22-3.97-.06-15.66-3.4-56.04-34.33-56.04-70.84h0C40.08,47.36,76.82,0,121.71,0h3.31c44.9,0,81.63,47.36,81.63,105.25h0c0,38.72-43.53,64.57-55.14,64.57l-51.42,6.34Z"/>
+        <g id="Bouche">
+          <g id="Lèvre_bas" data-name="Lèvre bas">
+            <line class="cls-1" x1="96.12" y1="154.2" x2="100.57" y2="154.2"/>
+            <rect class="cls-3" x="90.85" y="149.97" width="13.4" height="4.24" rx="1.49" ry="1.49"/>
+          </g>
+          <g id="Lèvre_haut" data-name="Lèvre haut">
+            <line class="cls-1" x1="93.15" y1="145.47" x2="102.5" y2="145.47"/>
+            <rect class="cls-3" x="91.43" y="145.47" width="12.48" height="2.98" rx="1.49" ry="1.49"/>
+          </g>
+          <line class="cls-1" x1="89.04" y1="149.31" x2="106.08" y2="149.31"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
